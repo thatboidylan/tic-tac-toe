@@ -7,3 +7,6 @@ def display_board(board):
     
 def get_player_choice():
   int(input("Pick a number between 1 and 9: "))
+  
+board = create_board()
+display_board(board)
