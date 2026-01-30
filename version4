@@ -18,3 +18,10 @@ def place_move(board, choice, player_symbol):
      if board[i][j] == choice:
        board[i][j] = player_symbol
   return board
+
+board = create_board()
+
+while True:
+  display_board(board)
+  choice = get_player_choice(player_symbol)
+  board = place_move(board, choice, player_symbol)
